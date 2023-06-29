@@ -1,0 +1,4 @@
+config.py
+venv/
+.tox/
+__pycache__/
