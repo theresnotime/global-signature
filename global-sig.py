@@ -11,6 +11,7 @@ HEADERS = {"User-Agent": f"global-sig_v{SW_VERSION}(https://w.wiki/69K7)"}
 
 
 def get_attached_wikis(wiki: Wiki):
+    """Get a list of all attached SUL accounts"""
     if VERBOSE:
         print("Getting attached accounts")
     params = {
@@ -23,6 +24,7 @@ def get_attached_wikis(wiki: Wiki):
 
 
 def set_signature(wiki: Wiki):
+    """Set the signature on a wiki"""
     if DRY:
         print(
             f"[DRY] Would have set signature on {wiki.domain} to `{config.USER_SIGNATURE}`"
